@@ -1,74 +1,76 @@
-<<<<<<< HEAD
-# find_your_love
-=======
-# Getting Started with Create React App
+# Find Your Love - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Find Your Love is a matchmaking web application built with React and Material UI (MUI) for the front-end. It allows users to sign up, log in, and interact with potential matches through messages, profiles, and compatibility features.
 
-## Available Scripts
+## Technologies Used
+- React 19
+- React Router DOM 7
+- Material UI (MUI)
+- Axios
+- SweetAlert2
+- Date-fns
 
-In the project directory, you can run:
+## Prerequisites
+Before running this project, ensure you have the following installed:
+- Node.js (>= 16.x)
+- npm (>= 8.x)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/revenger101/FindYourLove.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd find_your_love
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Running the Application
+To start the development server, run:
+```sh
+npm start
+```
+The app will be available at `http://localhost:3000/`.
 
-### `npm test`
+## Project Structure
+```
+find_your_love/
+│── src/
+│   ├── Components/       # Reusable UI components (Sidebar, etc.)
+│   ├── pages/            # Application pages (Profile, Messages, Matches, etc.)
+│   ├── App.js            # Main application component with routing
+│   ├── index.js          # Entry point of the React app
+│── public/
+│── package.json         # Project dependencies and scripts
+│── README.md            # Project documentation
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Available Routes
+| Route          | Component        | Description          |
+|---------------|-----------------|----------------------|
+| `/`           | FindYourLove     | Homepage            |
+| `/profile`    | Profile          | User profile page   |
+| `/messages`   | Messages         | Messages section    |
+| `/matches`    | Matches          | View matches        |
+| `/login`      | Login            | User login page     |
+| `/signup`     | Signup           | User signup page    |
 
-### `npm run build`
+## API Integration
+This front-end communicates with the Django backend via Axios. Ensure the backend is running before testing API calls.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
+To build the project for production, run:
+```sh
+npm run build
+```
+The optimized files will be available in the `build/` directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
+This project is open-source under the MIT License.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 11a7051 (First Commit)
